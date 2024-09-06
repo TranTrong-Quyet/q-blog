@@ -23,11 +23,11 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        index: true,
+        index: "true",
         element: <Home />,
       },
       {
-        path: "/post/:id",
+        path: "/posts/:id",
         element: <PostDetail />,
       },
       {

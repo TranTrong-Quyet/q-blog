@@ -17,16 +17,27 @@ const Header = () => {
   return (
     <>
       <div>
-        <div className="flex flex-row m-4 justify-between items-center">
+        <div className="flex flex-row m-4 justify-between items-center z-50">
           <Link to="/" className="w-16 ">
             <img src={Logo} alt="logo" className="w-24"></img>
           </Link>
 
           <div className="flex">
             <nav
-              className={`${mobileMenuOpen ? "block" : "hidden"} flex md:flex`}
+              className={`${
+                mobileMenuOpen ? "block" : "hidden"
+              } flex md:flex z-50`}
             >
               <ul className="absolute right-0 left-0 top-14 px-4 bg-blue-50 py-6 gap-4 flex flex-col md:static md:flex md:flex-row md:gap-6 md:bg-inherit ">
+                <li>
+                  <Link
+                    to="/"
+                    className="text-md text-slate-800 hover:text-green-500 font-medium"
+                    onClick={handelMenuClose}
+                  >
+                    Home
+                  </Link>
+                </li>
                 <li>
                   <Link
                     to="/profile"
