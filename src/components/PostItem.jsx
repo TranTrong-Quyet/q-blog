@@ -26,7 +26,7 @@ const PostItem = ({ postID, title, desc, authorID, thumbnail, category }) => {
           <PostAuthor />
           <div>
             <Link
-              to={`/post/categories/${category}`}
+              to={`/posts/categories/${category}`}
               className="text-green-500 bg-green-200 px-2 py-1 rounded-md "
             >
               {category}

@@ -39,7 +39,7 @@ const router = createBrowserRouter([
         element: <Logout />,
       },
       {
-        path: "/authors",
+        path: "/authors/:id",
         element: <Authors />,
       },
       {
