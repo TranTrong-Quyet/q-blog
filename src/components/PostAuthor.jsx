@@ -4,7 +4,7 @@ import Avatar from "../assets/avatar.avif";
 const PostAuthor = () => {
   return (
     <div>
-      <Link to={`/posts/users/asdd`} className="flex flex-row gap-2 ">
+      <Link to={`/posts/users/1`} className="flex flex-row gap-2 ">
         <div>
           <img
             src={Avatar}

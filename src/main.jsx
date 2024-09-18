@@ -15,6 +15,7 @@ import CategoryPosts from "./pages/CategoryPosts.jsx";
 import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import AuthorPosts from "./pages/AuthorPosts.jsx";
 
 const router = createBrowserRouter([
   {
@@ -62,6 +63,10 @@ const router = createBrowserRouter([
         path: "posts/categories/:category",
         element: <CategoryPosts />,
       },
+      {
+        path: 'posts/users/:id',
+        element: <AuthorPosts />
+      }
     ],
   },
 ]);
